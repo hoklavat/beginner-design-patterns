@@ -1,0 +1,57 @@
+****DESIGN PATTERNS****
+
+[DESIGN PATTERN]
+- a general repeatable solution to a commonly occurring problem in software design. 
+- a description or a template for how to solve a problem that can be used in many different situations.
+- tested, proven development paradigms. 
+
+[CREATIONAL]
+- class (inheritance) and object (delegation) creation.
+    * abstract factory: creates an instance of several families of classes.
+    * builder: seperates object construction from its representation.
+    * factory method: create an instance of several derived classes.
+    * object pool: avoid expensive acquisition, recycle objects that are no longer in use.
+    * prototype: fully initialized instance to be copied or cloned.
+    * singleton: class of which only a single instance can exist.
+
+[STRUCTURAL]
+- class and object composition.
+    * adapter: match interfaces of different classes.
+    * bridge: seperates an object’s interface from its implementation.
+    * composite: tree structure of simple and composite objects.
+    * decorator: add responsibilities to objects dynamically.
+    * facade: single class that represents an entire subsystem.
+    * flyweight: instance used for efficient sharing.
+    * private class data: restrict accessor/mutator access.
+    * proxy: object that represents another object.
+
+[BEHAVIORAL]
+- communication between class objects.
+    * chain of responsibility: pass a request between chain of objects.
+    * command: encapsulate a command request as an object.
+    * interpreter: include language elements in a program.
+    * iterator: sequentially access the elements of a collection.
+    * mediator: define simplified communication between classes.
+    * memento: capture and restore an object internal state.
+    * null object: act as default value of an object.
+    * observer: notify change to a number of classes.
+    * state: alter object behaviour when its state change.
+    * strategy: encapsulate an algorithm inside a class.
+    * template method: defer exact steps of an algorithm to a subclass.
+    * visitor: define new operation to a class without change.
+
+[ABSTRACT FACTORY]
+- create families of related or dependent objects without specifying their concrete classes.
+- clients never create platform objects directly, they ask the factory to do that for them.
+- defines a factory method per product.
+
+[BUILDER]
+- same construction process can create different representations.
+- creates one of several targets.
+- constructs the product step by step under the control of the director.
+- there can be variation in the content, but the construction process is the same.
+
+[FACTORY METHOD]
+- superclass let subclasses decide which class to instantiate.
+- superclass specifies all standard and generic behavior.
+- superclass delegates the creation details to subclasses that are supplied by the client.
