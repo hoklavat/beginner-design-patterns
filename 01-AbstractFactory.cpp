@@ -72,7 +72,7 @@ public:
 
 class ConcreteFactoryY: public AbstractFactory{
 public:
-	~ConcreteFactoryY() {}
+	~ConcreteFactoryY(){}
 
 	ProductA *createProductA(){
 		return new ConcreteProductAY();

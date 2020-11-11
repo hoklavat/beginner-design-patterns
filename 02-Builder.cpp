@@ -76,7 +76,7 @@ public:
 
 class Director{
 public:
-	Director(): builder() {}
+	Director(): builder(){}
 	
 	~Director(){
 		if(builder){
@@ -85,7 +85,7 @@ public:
 	}
 	
 	void set(Builder *b){
-		if (builder){
+		if(builder){
 			delete builder;
 		}
 		builder = b;

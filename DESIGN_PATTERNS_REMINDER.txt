@@ -55,3 +55,19 @@
 - superclass let subclasses decide which class to instantiate.
 - superclass specifies all standard and generic behavior.
 - superclass delegates the creation details to subclasses that are supplied by the client.
+
+[OBJECT POOL]
+- avoid creating a new objects by simply asking the pool for one that has already been instantiated.
+- create new instance if there isn't any free instance in the pool.
+- after using, instance returned to the pool by client.
+
+[PROTOTYPE]
+- create new objects by copying abstract structure.
+- abstraction doesn't contain implementation. 
+- all methods are implemented in concrete class.
+- clone method returns instance of concrete class derived from prototype.
+
+[SINGLETON]
+- ensure a class has only one instance.
+- provide a global access. static.
+- initialized on first use.
