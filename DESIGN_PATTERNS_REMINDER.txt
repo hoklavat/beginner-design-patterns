@@ -71,3 +71,17 @@
 - ensure a class has only one instance.
 - provide a global access. static.
 - initialized on first use.
+
+[ADAPTER]
+- lets classes work together that couldn't otherwise because of incompatible interfaces.
+- wrap an existing class with a new interface.
+- allows incompatible classes to work together by converting the interface of one class into an interface expected by the clients.
+
+[BRIDGE]
+- decouple an abstraction from its implementation, so that the two can vary independently.
+- decompose the component's interface and implementation into orthogonal class hierarchies.
+- interface class contains a pointer to the abstract implementation class.
+
+[COMPOSITE]
+- compose objects into tree structures to represent whole-part hierarchies.
+- composites that contain components, each of which could be a composite.

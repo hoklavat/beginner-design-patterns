@@ -63,8 +63,8 @@ int main(){
 	
 	Product *p2 = creator->createProductB();
 	cout << "Product: " << p2->getName() << endl;
-	creator->removeProduct(p2);
-	
+	creator->removeProduct(p2);	
 	delete creator;
+	
 	return 0;
 }
