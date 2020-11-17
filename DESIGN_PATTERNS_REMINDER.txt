@@ -85,3 +85,18 @@
 [COMPOSITE]
 - compose objects into tree structures to represent whole-part hierarchies.
 - composites that contain components, each of which could be a composite.
+
+[DECORATOR]
+- attach additional responsibilities to an object dynamically for extending functionality.
+- add behavior or state to individual objects at run-time. 
+
+[FACADE]
+- provide a unified interface to a set of interfaces in a subsystem. 
+- defines a higher-level interface that makes the subsystem easier to use.
+
+[FLYWEIGHT]
+- share objects to allow their use at fine granularity without prohibitive cost.
+- divided into two pieces: the state-dependent (extrinsic) part, and the state-independent (intrinsic) part. 
+- intrinsic state is stored (shared) in the flyweight object. 
+- extrinsic state is stored in the client objects, and passed to the flyweight when its operations are invoked.
+
