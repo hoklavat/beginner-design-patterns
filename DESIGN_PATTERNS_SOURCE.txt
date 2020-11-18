@@ -1,0 +1,25 @@
+*** DESIGN PATTERNS ***
+
+[SOFTWARE]
+* Compiler: MinGW (http://www.mingw.org/)
+* Integrated Development Environment: CodeLite (https://codelite.org/)
+
+[SOURCE LIST]
+01-AbstractFactory
+02-Builder
+03-FactoryMethod
+04-ObjectPool
+05-Prototype
+06-Singleton
+07-Adapter(Class)
+07-Adapter(Object)
+08-Bridge
+09-Composite
+10-Decorator
+11-Facade
+12-Flyweight
+13-Proxy
+14-ChainOfResponsibility
+15-Command
+
+

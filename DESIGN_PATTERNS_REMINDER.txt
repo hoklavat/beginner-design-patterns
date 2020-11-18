@@ -100,3 +100,26 @@
 - intrinsic state is stored (shared) in the flyweight object. 
 - extrinsic state is stored in the client objects, and passed to the flyweight when its operations are invoked.
 
+[PRIVATE]
+- using the private class data design pattern prevents that undesirable manipulation.
+- control write access to class attributes.
+- separate data from methods that use it.
+
+[PROXY]
+- provides a surrogate or placeholder for another object to control access to it.
+- use an extra level of indirection to support distributed, controlled, or intelligent access.
+- virtual proxy is a placeholder for "expensive to create" objects.
+- remote proxy provides a local representative for an object that resides in a different address space.
+- protective proxy controls access to a sensitive master object.
+- smart proxy interposes additional actions when an object is accessed.
+
+[CHAIN OF RESPONSIBILITY]
+- object-oriented linked list with recursive traversal.
+- launch and leave requests with a single processing pipeline that contains many possible handlers.
+
+[COMMAND]
+- allows requests to be encapsulated as objects, thereby allowing clients to be parametrized with different requests. 
+- decouples the object that invokes the operation from the one that knows how to perform it. 
+- support undoable operations. object-oriented callback.
+- command class holds some subset of the following: an object, a method to be applied to the object, and the arguments to be passed when the method is applied.
+- execute method causes the pieces to come together.
