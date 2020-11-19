@@ -21,5 +21,6 @@
 13-Proxy
 14-ChainOfResponsibility
 15-Command
-
-
+16-Interpreter
+17-Iterator
+18-Mediator

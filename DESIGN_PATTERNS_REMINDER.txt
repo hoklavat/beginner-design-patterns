@@ -1,4 +1,4 @@
-****DESIGN PATTERNS****
+*** DESIGN PATTERNS ***
 
 [DESIGN PATTERN]
 - a general repeatable solution to a commonly occurring problem in software design. 
@@ -123,3 +123,17 @@
 - support undoable operations. object-oriented callback.
 - command class holds some subset of the following: an object, a method to be applied to the object, and the arguments to be passed when the method is applied.
 - execute method causes the pieces to come together.
+
+[INTERPRETER]
+- uses the representation to interpret sentences in the language.
+- map domain to language, language to grammar, grammar to hierarchical object-oriented design.
+- definine domain language as a simple language grammar, represent domain rules as language sentences, interpret these sentences to solve the problem. 
+
+[ITERATOR]
+- access the elements of an aggregate object sequentially without exposing its underlying representation.
+- take responsibility for access, traverse out of aggregate object, put it into an iterator object that defines a standard traversal protocol.
+
+[MEDIATOR]
+- define an object that encapsulates how a set of objects interact.
+- design an intermediary to decouple many peers.
+- promotes a many-to-many relationship network to full object status.
