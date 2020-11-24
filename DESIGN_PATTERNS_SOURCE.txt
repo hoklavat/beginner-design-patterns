@@ -24,3 +24,9 @@
 16-Interpreter
 17-Iterator
 18-Mediator
+19-Memento
+20-Observer
+21-State
+22-Strategy
+23-TemplateMethod
+24-Visitor
