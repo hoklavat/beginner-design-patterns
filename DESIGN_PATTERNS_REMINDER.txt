@@ -1,139 +1,196 @@
 *** DESIGN PATTERNS ***
 
 [DESIGN PATTERN]
-- a general repeatable solution to a commonly occurring problem in software design. 
-- a description or a template for how to solve a problem that can be used in many different situations.
-- tested, proven development paradigms. 
+- general repeatable solution to commonly occurring problem in software design. 
+- description/template for how to solve problem that can be used in many different situations.
+- tested, proven development paradigms.
 
 [CREATIONAL]
-- class (inheritance) and object (delegation) creation.
-    * abstract factory: creates an instance of several families of classes.
-    * builder: seperates object construction from its representation.
-    * factory method: create an instance of several derived classes.
-    * object pool: avoid expensive acquisition, recycle objects that are no longer in use.
-    * prototype: fully initialized instance to be copied or cloned.
-    * singleton: class of which only a single instance can exist.
+- class and object creation.
+  * abstract factory: creates instance of several families of classes.
+  * builder: seperates object construction from its representation.
+  * factory method: creates instance of several derived classes.
+  * object pool: avoid expensive acquisition, recycle objects that are no longer in use.
+  * prototype: fully initialized instance to be copied or cloned.
+  * singleton: class of which only single instance can exist.
 
 [STRUCTURAL]
 - class and object composition.
-    * adapter: match interfaces of different classes.
-    * bridge: seperates an object’s interface from its implementation.
-    * composite: tree structure of simple and composite objects.
-    * decorator: add responsibilities to objects dynamically.
-    * facade: single class that represents an entire subsystem.
-    * flyweight: instance used for efficient sharing.
-    * private class data: restrict accessor/mutator access.
-    * proxy: object that represents another object.
+  * adapter: match interfaces of different classes.
+  * bridge: seperates object’s interface from its implementation.
+  * composite: tree structure of simple and composite objects.
+  * decorator: add responsibilities to objects dynamically.
+  * facade: single class that represents entire subsystem.
+  * flyweight: instance used for efficient sharing.
+  * private class data: restrict accessor/mutator access.
+  * proxy: object that represents another object.
 
 [BEHAVIORAL]
 - communication between class objects.
-    * chain of responsibility: pass a request between chain of objects.
-    * command: encapsulate a command request as an object.
-    * interpreter: include language elements in a program.
-    * iterator: sequentially access the elements of a collection.
-    * mediator: define simplified communication between classes.
-    * memento: capture and restore an object internal state.
-    * null object: act as default value of an object.
-    * observer: notify change to a number of classes.
-    * state: alter object behaviour when its state change.
-    * strategy: encapsulate an algorithm inside a class.
-    * template method: defer exact steps of an algorithm to a subclass.
-    * visitor: define new operation to a class without change.
+  * chain of responsibility: pass request between chain of objects.
+  * command: encapsulate command request as object.
+  * interpreter: include language elements in program.
+  * iterator: sequentially access elements of collection.
+  * mediator: define simplified communication between classes.
+  * memento: capture and restore object internal state.
+  * null object: act as default value of object.
+  * observer: notify change to number of classes.
+  * state: alter object behaviour when its state change.
+  * strategy: encapsulate algorithm inside class.
+  * template method: defer exact steps of algorithm to subclass.
+  * visitor: define new operation to class without change.
 
 [ABSTRACT FACTORY]
 - create families of related or dependent objects without specifying their concrete classes.
-- clients never create platform objects directly, they ask the factory to do that for them.
-- defines a factory method per product.
+- clients never create platform objects directly, they ask factory to do that for them.
+- defines factory method per product.
+- example: sheet metal stamping equipment. same machinery used to stamp different parts of automobile.
 
 [BUILDER]
 - same construction process can create different representations.
 - creates one of several targets.
-- constructs the product step by step under the control of the director.
-- there can be variation in the content, but the construction process is the same.
+- constructs product step by step under control of director.
+- there can be variation in content, but construction process is same.
+- example: fast food restaurant. content of meal varies, construction process is same.
 
 [FACTORY METHOD]
 - superclass let subclasses decide which class to instantiate.
 - superclass specifies all standard and generic behavior.
-- superclass delegates the creation details to subclasses that are supplied by the client.
+- superclass delegates creation details to subclasses that are supplied by client.
+- example: plastic toy factory. molding powder injected into different molds to produce different toys.
 
 [OBJECT POOL]
-- avoid creating a new objects by simply asking the pool for one that has already been instantiated.
-- create new instance if there isn't any free instance in the pool.
-- after using, instance returned to the pool by client.
+- avoid creating new objects by simply asking pool for one that has already been instantiated.
+- create new instance if there isn't any free instance in pool.
+- after using, instance returned to pool by client.
+- example: office warehouse. spare office equipment is looked for in warehouse for new employee, if it doesn't exist new equipment is ordered.
 
 [PROTOTYPE]
 - create new objects by copying abstract structure.
 - abstraction doesn't contain implementation. 
 - all methods are implemented in concrete class.
 - clone method returns instance of concrete class derived from prototype.
+- example: mitotic division of cell. when cell clones itself two identical cells are obtained.
 
 [SINGLETON]
-- ensure a class has only one instance.
-- provide a global access. static.
+- ensure class has only one instance.
+- provide global access. static.
 - initialized on first use.
+- example: president of united states. global point of access.
 
 [ADAPTER]
 - lets classes work together that couldn't otherwise because of incompatible interfaces.
-- wrap an existing class with a new interface.
-- allows incompatible classes to work together by converting the interface of one class into an interface expected by the clients.
+- wrap existing class with new interface.
+- allows incompatible classes to work together by converting interface of one class into interface expected by clients.
+- example: socket wrenches. socket attaches to a ratchet provided that the size of the drive is the same. 
 
 [BRIDGE]
-- decouple an abstraction from its implementation, so that the two can vary independently.
-- decompose the component's interface and implementation into orthogonal class hierarchies.
-- interface class contains a pointer to the abstract implementation class.
+- decouple abstraction from its implementation, so that two can vary independently.
+- decompose component's interface and implementation into orthogonal class hierarchies.
+- interface class contains pointer to abstract implementation class.
+- example: household switch. turn on/off different devices.
 
 [COMPOSITE]
 - compose objects into tree structures to represent whole-part hierarchies.
-- composites that contain components, each of which could be a composite.
+- composites that contain components, each of which could be composite.
+- example: arithmetic expressions. operand can be a number, or another arithmetic expression.
 
 [DECORATOR]
-- attach additional responsibilities to an object dynamically for extending functionality.
-- add behavior or state to individual objects at run-time. 
+- attach additional responsibilities to object dynamically for extending functionality.
+- add behavior or state to individual objects at run-time.
+- example: assault gun. it can be applied certain accessories to make it more accurate, silent and devastating.
 
 [FACADE]
-- provide a unified interface to a set of interfaces in a subsystem. 
-- defines a higher-level interface that makes the subsystem easier to use.
+- provide unified interface to set of interfaces in subsystem. 
+- defines higher-level interface that makes subsystem easier to use.
+- example: customer service. consumer calls one number, customer service representative who acts as facade, providing an interface to other departments.
 
 [FLYWEIGHT]
 - share objects to allow their use at fine granularity without prohibitive cost.
-- divided into two pieces: the state-dependent (extrinsic) part, and the state-independent (intrinsic) part. 
-- intrinsic state is stored (shared) in the flyweight object. 
-- extrinsic state is stored in the client objects, and passed to the flyweight when its operations are invoked.
+- divided into two pieces: state-dependent (extrinsic) part, and state-independent (intrinsic) part. 
+- intrinsic state is stored (shared) in flyweight object. 
+- extrinsic state is stored in client objects, and passed to flyweight when its operations are invoked.
+- example: webbrowsers. loads images just once and then reuses them from pool.
 
 [PRIVATE]
-- using the private class data design pattern prevents that undesirable manipulation.
+- using private class data design pattern prevents that undesirable manipulation.
 - control write access to class attributes.
 - separate data from methods that use it.
 
 [PROXY]
-- provides a surrogate or placeholder for another object to control access to it.
-- use an extra level of indirection to support distributed, controlled, or intelligent access.
-- virtual proxy is a placeholder for "expensive to create" objects.
-- remote proxy provides a local representative for an object that resides in a different address space.
-- protective proxy controls access to a sensitive master object.
-- smart proxy interposes additional actions when an object is accessed.
+- provides surrogate or placeholder for another object to control access to it.
+- use extra level of indirection to support distributed, controlled, or intelligent access.
+- virtual proxy is placeholder for "expensive to create" objects.
+- remote proxy provides local representative for object that resides in different address space.
+- protective proxy controls access to sensitive master object.
+- smart proxy interposes additional actions when object is accessed.
+- example: bank check. check or bank draft is proxy for funds in an account.
 
 [CHAIN OF RESPONSIBILITY]
 - object-oriented linked list with recursive traversal.
-- launch and leave requests with a single processing pipeline that contains many possible handlers.
+- launch and leave requests with single processing pipeline that contains many possible handlers.
+- example: atm money giving mechanism. higher valued banknotes selected first.
 
 [COMMAND]
 - allows requests to be encapsulated as objects, thereby allowing clients to be parametrized with different requests. 
-- decouples the object that invokes the operation from the one that knows how to perform it. 
+- decouples object that invokes operation from one that knows how to perform it. 
 - support undoable operations. object-oriented callback.
-- command class holds some subset of the following: an object, a method to be applied to the object, and the arguments to be passed when the method is applied.
-- execute method causes the pieces to come together.
+- command class holds some subset of following: object, method to be applied to object, and arguments to be passed when method is applied.
+- execute method causes pieces to come together.
+- example: dinner check. waiter takes order from customer then encapsulates that order by writing it on check. order is then queued for short order cook.
 
 [INTERPRETER]
-- uses the representation to interpret sentences in the language.
+- uses representation to interpret sentences in language.
 - map domain to language, language to grammar, grammar to hierarchical object-oriented design.
-- definine domain language as a simple language grammar, represent domain rules as language sentences, interpret these sentences to solve the problem. 
+- define domain language as simple language grammar, represent domain rules as language sentences, interpret these sentences to solve problem.
+- example: musician. musician playing music from notation is able to reproduce original pitch and duration of each sound represented.
 
 [ITERATOR]
-- access the elements of an aggregate object sequentially without exposing its underlying representation.
-- take responsibility for access, traverse out of aggregate object, put it into an iterator object that defines a standard traversal protocol.
+- access elements of aggregate object sequentially without exposing its underlying representation.
+- take responsibility for access, traverse out of aggregate object, put it into iterator object that defines standard traversal protocol.
+- example: television set next/previous buttons. when viewer selects next button, next tuned channel will be displayed. 
 
 [MEDIATOR]
-- define an object that encapsulates how a set of objects interact.
-- design an intermediary to decouple many peers.
-- promotes a many-to-many relationship network to full object status.
+- define object that encapsulates how set of objects interact.
+- design intermediary to decouple many peers.
+- promotes many-to-many relationship network to full object status.
+- example: airport control tower. pilots communicate with tower, not directly with each other.
+
+[MEMENTO]
+- capture and externalize object's internal state so that object can be returned to this state later.
+- restore object back to its previous state.
+- three distinct roles: originator, caretaker, memento.
+- originator: object that knows how to save itself.
+- caretaker: object that knows why and when originator needs to save and restore itself.
+- memento: lock box that is written and read by Originator, and shepherded by caretaker.
+- example: repairing drum brake of car. drums are removed from both sides. one side is disassembled and other side serves as memento of brake parts.
+
+[NULL OBJECT]
+- encapsulate absence of object by providing substitutable alternative that offers suitable default do nothing behavior.
+
+[OBSERVER]
+- define one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+- each observer is responsible for pulling its particular window of interest from subject.
+- example: auction. auctioneer starts, observes, raises bidding then broadcasts changes to all bidders.
+
+[STATE]
+- allow object to alter its behavior when its internal state changes.
+- define state-specific behavior in appropriate state derived classes.
+- to change state of state machine, change current state pointer.
+- example: vending machine. these machines have states based on inventory, amount of currency deposited, ability to make change, item selected, etc.
+
+[STRATEGY]
+- define family of algorithms, encapsulate each one, and make them interchangeable.
+- maximize cohesion and minimize coupling.
+- example: transportation to airport. driving own car, taking taxi, airport shuttle, city bus, limousine service, ...
+
+[TEMPLATE]
+- define skeleton of algorithm in operation, deferring some steps to client subclasses.
+- example: new subdivision for home. typical subdivision consists of limited number of floor plans with different variations available for each. within floor plan, 
+foundation, framing, plumbing, and wiring will be identical for each house. variation is introduced in later stages of construction to produce wider variety of models.
+
+[VISITOR]
+- represent operation to be performed on elements of object structure. visitor lets you define new operation without changing classes of elements on which it operates.
+- recovering lost type information. do right thing based on type of two objects.
+- double dispatch: operation executed depends on: name of request, and type of two receivers.
+- example: taxi company. when person calls taxi company (accepting visitor), company dispatches cab to customer. upon entering taxi customer (visitor), is no longer in control of his or her own transportation, taxi driver is.

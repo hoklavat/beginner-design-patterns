@@ -59,8 +59,6 @@ public:
 };
 
 int main(){
-	// An example of very simple expression tree
-	// that corresponds to expression (A AND B)
 	AbstractExpression *A = new TerminalExpression("A");
 	AbstractExpression *B = new TerminalExpression("B");
 	AbstractExpression *exp = new NonterminalExpression(A, B);
